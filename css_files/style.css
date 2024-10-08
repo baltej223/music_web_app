@@ -257,7 +257,7 @@ audio{
   }
   .musicplayer{
     position: fixed;
-    top: calc(100vh - 40svw0px -54px);
+    top: calc(100vh - 40svw -54px);
     left: 8svw;
     width: 80svw;
   }
