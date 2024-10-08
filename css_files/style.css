@@ -192,8 +192,8 @@ body{
 .SearchResults{
   position:fixed;
   top: 7svh;
-  left: 32svw;
-  width: 60svh;
+  left: calc(50vw - 35vw);
+  width: 70svw;
   height: fit-content;
   background: rgb(45, 45, 45);
   border-radius: 15px;
@@ -216,7 +216,7 @@ body{
   width: 60%;
 }
 .playButton{
-  align-self: center;
+  justify-self:flex-start ;
   margin-left: 15%; 
 }
 .musicplayer{
