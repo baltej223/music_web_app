@@ -245,7 +245,7 @@ audio{
     width: 0px;
   }
   .block{
-    height: 18svh;
+    height: 25svh;
     width: 90svw;
   }
   #music_search_bar{
@@ -257,7 +257,7 @@ audio{
   }
   .musicplayer{
     position: fixed;
-    top: calc(100vh - 40px);
+    top: calc(100vh - 40svw0px -54px);
     left: 8svw;
     width: 80svw;
   }
