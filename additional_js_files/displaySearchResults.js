@@ -9,12 +9,13 @@ function displaySearchResults(json){
             let name = results[i].name;
             let imageUrl = results[i].image[0].url;
             let duration = results[i].duration;
+            let artist = results[i].artists.primary[0].name;
             string = string + `
             <div class="searchResultdata backgroundUI flexRow">
                 <img src="${imageUrl}" alt="" srcset="" id="searchResultImage">
                 <div class="searchResultsImageDetails flexColumn">
                     <div class="searchResultName">${name}</div>
-                    <div class="searchResultDuration">${duration}</div>
+                    <div class="searchResultDuration">${artist+":"+duration}</div>
                 </div>
                 <button class="playButton transparent" onclick="play('${url}')">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"

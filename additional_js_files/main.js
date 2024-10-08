@@ -35,7 +35,19 @@ $$$("#music_search_bar").then(searchbar=>{
         })
     })
 });
-
+//js media queries
+document.addEventListener("DOMContentLoaded",function(){
+    if (screen.width<700){
+        $$$(".aside").then(aside=>{
+            aside.outerHTML="";
+        });
+        $$$(".navpilldata",0,true).then(navpilldatas=>{
+            navpilldatas.forEach(datas => {
+                datas.outerHTML="";
+            });
+        })
+    }
+});
 // let musicHandlerInstance = new MusicHandler();
 // musicHandlerInstance.search("ve hania").then(result => {
 //     console.log(result.data.results[1].downloadUrl[4].url);
